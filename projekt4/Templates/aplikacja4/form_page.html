@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Some random things you probably have no interest in reading this
+    but anyway <span style="color: #1234">damn</span></h1>
+
+  <div class="container">
+    <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+      <input type="submit" class="btn btn-primary" value="Submit me please">
+    </form>
+  </div>
+
+</body>
+
+</html>
